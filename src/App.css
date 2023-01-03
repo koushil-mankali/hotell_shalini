@@ -1,0 +1,206 @@
+.App {
+  text-align: center;
+  width: 100%;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+.signup-container {
+  text-align: center;
+}
+
+.signup-content {
+  background: #fff;
+  box-shadow: 0 1px 11px rgba(255, 248, 248, 0.667);
+  border-radius: 2px;
+  width: 800px;
+  display: inline-block;
+  margin-top: 30px;
+  vertical-align: middle;
+  position: relative;
+  padding: 35px;
+}
+
+.social-btn.facebook img {
+  height: 24px;
+  margin-left: 3px;
+}
+
+.login-link {
+  color: rgba(0, 0, 0, 0.65);
+  font-size: 14px;
+}
+
+.signup-title {
+  font-size: 1.5em;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.signup-input-inline-left {
+  padding: 0px 5px 0px 15px;
+}
+
+.signup-input-inline-right {
+  padding: 0px 15px 0px 5px;
+}
+
+select:required:invalid {
+  height: 45px !important;
+  color: #666;
+}
+.heading{
+  
+}
+
+select:required:valid {
+  height: 45px !important;
+}
+
+option[value=""][disabled] {
+  display: none;
+}
+option {
+  color: #000;
+}
+
+.App-header {
+  background-color: #cad0dc;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+body{
+  background: url(http://wrbbradio.org/wp-content/uploads/2016/10/grey-background-07.jpg) no-repeat center fixed;
+  background-size: cover;
+}
+
+.container{
+	background-color: #000000;
+  background: cover;
+  color:aliceblue;
+  font-weight: 900;
+	width: 500px;
+	height: 700px;
+  padding-top: 100px ;
+	padding-bottom: 300px;
+	position: absolute;
+	top:50%;
+  margin-top: 10px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin: auto;
+  padding: 70px 20px 200px;
+}
+.form{
+  margin-top: 30px;
+}
+option{
+  background-color: antiquewhite;
+  font-weight: 900;
+}
+h1,button{
+  background-color: #000000;
+  background: cover;
+  color:aliceblue;
+  font-weight: 900;
+  margin-left: 30px;
+}
+.fl{
+	float: left;
+  width: 110px;
+  line-height: 35px;
+}
+
+.fontLabel{
+  color: white;
+}
+
+.fr{
+	float: right;
+}
+
+.clr{
+	clear: both;
+}
+
+.box{
+	width: 360px;
+	height: 35px;
+	margin-top: 10px;
+	font-family: verdana;
+	font-size: 12px;
+}
+
+.textBox{
+	height: 35px;
+	width: 190px;
+	border: none;
+  padding-left: 20px;
+}
+
+.new{
+  float: left;
+}
+
+.iconBox{
+	height: 35px;
+	width: 40px;
+	line-height: 38px;
+	text-align: center;
+  background: #ff6600;
+}
+
+.radio,button{
+	color: white;
+	background: #2d3e3f;
+	line-height: 38px;
+}
+
+.terms{
+	line-height: 35px;
+	text-align: center;
+	background: #2d3e3f;
+	color: white;
+}
+
+.submit,button{
+	float: right;
+	border: none;
+	color: white;
+	width: 110px;
+	height: 35px;
+	background: #ff6600;
+	text-transform: uppercase;
+  cursor: pointer;
+
+
+
+}

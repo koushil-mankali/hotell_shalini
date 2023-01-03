@@ -1,0 +1,109 @@
+.single-room {
+  padding: 5rem 0 0 0;
+}
+
+.single-room-info {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 2rem auto;
+}
+.signup-container {
+  text-align: center;
+}
+
+.signup-content {
+  background: #fff;
+  box-shadow: 0 1px 11px rgba(0, 0, 0, 0.27);
+  border-radius: 2px;
+  width: 800px;
+  display: inline-block;
+  margin-top: 30px;
+  vertical-align: middle;
+  position: relative;
+  padding: 35px;
+}
+
+.social-btn.facebook img {
+  height: 24px;
+  margin-left: 3px;
+}
+
+.login-link {
+  color: rgba(0, 0, 0, 0.65);
+  font-size: 14px;
+}
+
+.signup-title {
+  font-size: 1.5em;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.signup-input-inline-left {
+  padding: 0px 5px 0px 15px;
+}
+
+.signup-input-inline-right {
+  padding: 0px 15px 0px 5px;
+}
+
+select:required:invalid {
+  height: 45px !important;
+  color: #666;
+}
+
+select:required:valid {
+  height: 45px !important;
+}
+
+option[value=""][disabled] {
+  display: none;
+}
+option {
+  color: #000;
+}
+.desc,
+.info {
+  margin: 1rem 0;
+}
+.desc h3 {
+  text-transform: capitalize;
+  letter-spacing: var(--mainSpacing);
+}
+.desc p {
+  line-height: 1.5;
+  width: 35rem;
+}
+.info h3,
+.info h6 {
+  text-transform: capitalize;
+  letter-spacing: var(--mainSpacing);
+}
+
+.info h6 {
+  font-weight: 100%;
+}
+.room-extras {
+  width: 80vw;
+  margin: 0 auto 3rem auto;
+}
+.room-extras h6 {
+  text-transform: capitalize;
+  letter-spacing: var(--mainSpacing);
+}
+.extras {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  grid-column-gap: 2rem;
+  grid-row-gap: 1rem;
+}
+
+.image__class img {
+  border-radius: 8px;
+  width: 100%;
+  height: 500px;
+}
