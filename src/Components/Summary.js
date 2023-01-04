@@ -4,9 +4,9 @@ import axios from "axios";
 import Footer from "./Footer";
 import NavBar from "./NavBar";
 
-const Summary = ({ userID }) => {
+const Summary = () => {
   //   const id = userID;
-  const { id } = useParams();
+  const { id, userID = "" } = useParams();
   const [room, setRoom] = useState({
     name: "",
     capacity: "",

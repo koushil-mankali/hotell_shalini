@@ -1,56 +1,8 @@
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  useLocation,
-} from "react-router-dom";
-import { createRoot } from 'react-dom/client';
-import Home from "./Components/Home";
-import RoomList from "./Components/RoomList";
-import BookingDetails from "./Components/BookingDetails";
-import SingleRoom from "./Components/SingleRoom";
-import Sauna from "./Components/Sauna";
-import Service from "./Components/Service";
-import SingleService from "./Components/SingleService";
-import Summary from "./Components/Summary";
+import React from "react";
 import "./App.css";
 
-function App() {
-  const loc = useLocation();
-  let userID;
-  if (loc.state) {
-    userID = loc.state.userID;
-  }
-  return (
-    <Router>
-      <Routes>
-        <Route exact path="/Home">
-          <Home />
-        </Route>
-        <Route exact path="/Rooms">
-          <RoomList />
-        </Route>
-        <Route exact path="/Rooms/:id">
-          <SingleRoom />
-        </Route>
-        <Route exact path="/booking/:id">
-          <BookingDetails userID={userID} />
-        </Route>
-        <Route exact path="/Services">
-          <Service />
-        </Route>
-        <Route exact path="/Sauna">
-          <Sauna userID={userID} />
-        </Route>
-        <Route exact path="/Services/:id">
-          <SingleService />
-        </Route>
-        <Route exact path="/Summary/:id">
-          <Summary userID={userID} />
-        </Route>
-      </Routes>
-    </Router>
-  );
-}
+const App = () => {
+  return <div>App</div>;
+};
 
 export default App;

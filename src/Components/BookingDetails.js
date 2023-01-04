@@ -5,7 +5,9 @@ import moment from "moment";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
 
-const BookingDetails = ({ userID }) => {
+const BookingDetails = () => {
+  const { userID = "" } = useParams();
+
   const navigate = useNavigate();
   const [fromDate, setFromDate] = useState();
   const [massage, setMassage] = useState(false);
@@ -39,7 +41,7 @@ const BookingDetails = ({ userID }) => {
       end = moment(toDate);
       setNoOFDays(Math.floor((end - start) / (1000 * 24 * 60 * 60)));
     }
-  }, [loadUser,fromDate, toDate]);
+  }, [loadUser, fromDate, toDate]);
 
   const reserve = () => {
     if (!fromDate || !toDate) {
