@@ -1,7 +1,10 @@
 import React from "react";
-import { Carousel} from "react-bootstrap";
+import { Carousel } from "react-bootstrap";
 import Footer from "./Footer";
 import NavBar from "./NavBar";
+
+import sampleImage from "../assets/Images/sample.jpg";
+
 const Home = () => {
   return (
     <div>
@@ -10,7 +13,7 @@ const Home = () => {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="Bkg.jpg"
+            src={sampleImage}
             alt="First slide"
             width="1240"
             height="600"
@@ -19,7 +22,7 @@ const Home = () => {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="bkg2.jpeg"
+            src={sampleImage}
             alt="Second slide"
             width="1240"
             height="600"
@@ -28,7 +31,7 @@ const Home = () => {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="bkg3.jpeg"
+            src={sampleImage}
             alt="Third slide"
             width="1240"
             height="600"
@@ -43,7 +46,6 @@ const Home = () => {
         <br />
       </div>
 
-        
       <br />
       <br />
       <Footer />
