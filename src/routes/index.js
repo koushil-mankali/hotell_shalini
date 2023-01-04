@@ -11,7 +11,10 @@ import Summary from "../Components/Summary";
 import Login from "../Components/Login";
 import SignUp from "../Components/Signup";
 
+// As per login variable value routes will be altered.
 let login = false;
+
+// These routes will be considered if yourn't logged in (login === false)
 let routes = [
   {
     path: "/",
@@ -31,6 +34,7 @@ let routes = [
   },
 ];
 
+// These routes will be considered if your logged in (login === true)
 if (login) {
   routes = [
     {

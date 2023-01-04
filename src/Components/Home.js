@@ -3,6 +3,9 @@ import { Carousel } from "react-bootstrap";
 import Footer from "./Footer";
 import NavBar from "./NavBar";
 
+/**
+ * NOTE: As your wrongly using image src, I have added a sample image and replaced your "Bkg.jpg", "bkg2.jpg" and "bkg3.jpg" with {sampleImage}
+ */
 import sampleImage from "../assets/Images/sample.jpg";
 
 const Home = () => {
