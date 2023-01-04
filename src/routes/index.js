@@ -25,6 +25,10 @@ let routes = [
     path: "/signup",
     element: <SignUp />,
   },
+  {
+    path: "*",
+    element: <h1>Error Page Not Found!</h1>,
+  },
 ];
 
 if (login) {
@@ -64,6 +68,10 @@ if (login) {
     {
       path: "/Summary/:userID",
       element: <Summary />,
+    },
+    {
+      path: "*",
+      element: <h1>Error Page Not Found!</h1>,
     },
   ];
 }
